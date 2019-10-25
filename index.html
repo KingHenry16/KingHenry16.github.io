@@ -1,52 +1,81 @@
 <!DOCTYPE html>
 <html>
 
+<link href="style.css" rel="stylesheet" type="text/css">
 
 <head>
+    <style type="text/css">
+    #title {
+        text-align: center;
+        color: darkgrey;
+        font-family: fantasy;
+        font-size: 65px;
 
-	<style type="text/css">
-		#ball {
-			width:100px;
-			height:100px;
-			background-image:url("http://cdn.shopify.com/s/files/1/1161/1916/products/2e67479ae6ce1e0b5d3ad9ca81bab7d4.png?v=1553807074");
-			background-size: contain;
-			position:absolute;
+    }
 
-		
-		}
-		#ball:hover{
-			transform:rotate(1440deg);
-			transition: 2s;
-		}
+    a {
+        text-decoration: none;
+        color: lightblue;
 
-	</style>
+
+    }
+
+    .catagories {
+        color: lightblue;
+        font-family: fantasy;
+        font-size: 40px;
+        position: absolute;
+        width: ;
+        height: ;
+        /*border: 5px solid black;*/
+    }
+
+    #projects {
+        text-align: left;
+        left: 13%;
+    }
+
+    #journal {
+        text-orientation: ;
+        left: 43%;
+    }
+
+    #about {
+        text-align: right;
+        left: 73%;
+    }
+
+    body {
+        background-color: black;
+         background-image: url(https://media.giphy.com/media/Ta1MVGKCG2GFq/giphy.gif);
+         background-repeat: no-repeat;
+         background-size: cover;
+
+    }
+
+    #container {
+        width: 100%;
+        height: 70px;
+        /*background-color: darkgrey;*/
+        /*background-image: url(https://media.giphy.com/media/Ta1MVGKCG2GFq/giphy.gif);*/
+    }
+    </style>
 </head>
 
-
-
 <body>
-
-	<div id="ball"> 
-
-
-	</div>
-
-	<script type="text/javascript">
-		
-		var ball = document.getElementById("ball");
-
-
-		document.addEventListener("mousemove", function(event) {console.log(event.clientX, event.clientY)
-
-				ball.style.left = event.clientX +"px"
-				ball.style.top = event.clientY +"px"
-
-});
-
-
-	</script>
-
+    <div id="title">
+        Henry Clark</div>
+    <div id="container">
+        <div class="catagories" id=projects>
+            <a href="projects.html">Projects!</a>
+        </div>
+        <div class="catagories" id=journal>
+            <a href="journal.html">Journal!</a>
+        </div>
+        <div class="catagories" id=about>
+            <a href="aboutme.html">About Me!</a>
+        </div>
+    </div>
 </body>
-
 
 </html>
