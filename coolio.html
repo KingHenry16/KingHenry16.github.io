@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>big chungus</title>
+    <style>
+    body {
+        background-image: url();
+    }
+    </style>
+</head>
+
+<body>
+    <script>
+    function makeBigchungus() {
+        var bigchungus = document.createElement("div");
+        document.body.appendChild(bigchungus);
+        bigchungus.style.width = "200px";
+        bigchungus.style.height = "200px";
+        bigchungus.style.backgroundImage = "url(https://i.kym-cdn.com/photos/images/original/001/447/699/3a0.png)";
+        bigchungus.style.backgroundSize = "contain";
+         bigchungus.style.display = "inline-block";
+         bigchungus.style.position = "relative";
+
+        bigchungus.addEventListener("click", function(event){
+        	makeBigchungus();
+        	console.log(bigchungus.style);
+        })
+        // bigchungus.style.backgroundColor = "pink";
+
+    }
+
+    makeBigchungus();
+    </script>
+</body>
+
+</html>

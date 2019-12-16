@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<style> 
+body{
+	margin:0;
+}
+		
+		#henry{
+			width:1300px;
+			height:1000px;
+			background-size:contain;
+			background-repeat:no-repeat;
+			font-size:90px;
+			text-align:center;
+			padding-top:100px;
+			background-image: url(https://www.wired.com/wp-content/uploads/2016/07/PikachuTA-EWEATA-1024x768.jpg);
+			position: center;
+
+		}
+	
+
+</style>
+</head>
+
+<body>
+<div id="henry">click anywhere!</div>
+
+<script>
+	
+var henry = document.getElementById('henry'); 
+
+henry.addEventListener("click", function(){console.log("hi");
+henry.innerText = hello[Math.round(Math.random()*10)];
+
+
+});
+
+	var hello = [" Hello", "你好", "Bonjour", "Hola", "こんにちは", "Hallo", "Здравствуйте", "Olá", "سلام","مرحبا","שלום" ];
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
